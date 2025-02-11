@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Poppins", serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(114, 37, 1);
+    position: relative;
+}
+.cursor{
+    height: 3.5vh;
+    width: 3.5vh;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999999999;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 16px 2px #ffffffb7;
+}
+.main video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.main-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 0 10vh;
+}
+nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 4vh;
+}
+.nav-links{
+    display: flex;
+    gap: 3vh;
+    text-transform: uppercase;
+}
+.nav-links h1{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2.4vh;
+}
+
+.middle-container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.left{
+    height: 55%;
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.left img{
+    position: absolute;
+    top: -2%;
+}
+.right{
+    height: 65%;
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.right img{
+    position: absolute;
+    bottom: 10%;
+}
+.middle-container img {
+    height: 35vh;
+    width: 35vh;
+    object-fit: contain;
+    object-position: center;
+}
+.middle-container h1{
+    font-size: 5vh;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+footer{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icons{
+    display: flex;
+    gap: 2.6vh;
+}
+.icons i {
+    font-size: 3vh;
+    transition: transform, 0.35s , ease-in-out, color 0.3s ease-in-out;
+}
+.icons i:hover{
+    transform: translateY(-5px) scale(1.05);
+    color: #f8faee;
+}
+footer h1{
+    font-weight: 300;
+    font-size: 2.6vh;
+}
